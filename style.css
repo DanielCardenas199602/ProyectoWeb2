@@ -1,0 +1,817 @@
+
+/*Tipografias*/
+
+@font-face {
+    font-family:"monserrat-regular" ;
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;   
+
+}
+
+
+@font-face {
+    font-family:"monserrat-bold" ;
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-weight:bold ;
+    font-style: bold;   
+
+}
+
+@font-face {
+    font-family:"breezi" ;
+    src: url(fonts/breezi_font-webfont.ttf);
+    font-weight:normal ;
+    font-style: normal;   
+
+}
+
+@font-face {
+    font-family:"social" ;
+    src: url(fonts/Social\ Media\ Circled.otf);
+    font-weight:normal ;
+    font-style: normal;   
+
+}
+
+
+
+
+/*Aspectos Generales */
+
+.icon{
+    font-family: "breezi" ;
+}
+.social{
+    font-family: "social" ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+    
+
+
+
+/*Header */
+#bar-1{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: white;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction:row;
+   
+
+}
+.volaris{
+    display: flex;
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+    margin-top: -13px;
+}
+.box-menu{
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap:nowrap;
+    font-family: "monserrat-bold" ;
+}
+#menu{
+    margin-top:-120px;
+    margin-right: 30px;
+    color: white;
+    font-size: 18px;
+}
+.clearfix{
+    clear: both;
+}
+#menu ul li {
+    display: block;
+    float: left;
+    padding: 9px;
+    letter-spacing: 1px;
+    line-height: 70px;
+  }
+  #menu ul li a{
+      color: white;
+      text-decoration: none;
+      transition: all 200ms;
+  }
+  #menu ul li a:hover{
+    color: #37bcf9  ;
+    transform: scale(1.3,1.3);
+
+
+}
+/*Banner*/
+
+#Banner{
+    display: flex;
+    flex-grow: 1;
+    width: 95.6%;
+    height: 465px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background: url(imgs/maya.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center ;
+    margin: 20px auto;
+    overflow: hidden;
+    
+}
+
+#Banner h1{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    font-family: "monserrat-bold" ;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 30px auto;
+    animation: Textvolaris 2s linear;
+    
+
+}
+
+@keyframes Textvolaris {
+    0%{
+        transform: translateX(-600%) scale3d(2,2);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(2,2);
+        opacity: 1;
+
+    }
+    75%{
+        transform: translateX(-600%) scale(3,3);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0%;
+
+
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+
+    }
+}
+/*bienevenida*/
+.welcome{
+    font-family: "monserrat-regular" ;
+}
+.welcome h1{
+    text-align: center;
+    margin-top: -12px;
+    font-family: "monserrat-bold";
+}
+
+.welcome p{
+    text-align: center;
+    margin-top: 13px ;
+}
+/*Cards*/
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-left: 150px;
+   
+    
+ 
+    
+
+}
+.card{
+    
+        float: left;
+        width: 204px ;
+        height: 190px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #ddd;
+        background: white;
+        overflow: hidden;
+        margin: 17px;
+        margin-top: 40px;
+        cursor: pointer;
+        transition: all 30ms;
+
+
+
+}
+.card:hover{
+    background-color: black;
+}
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 55px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+    transition:all 300ms ;
+}
+.card:hover .icon{
+    font-size: 70px;
+    color: #37bcf9 ;
+    animation: showICON 300ms linear;
+}
+@keyframes showICON {
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%) ;
+    }
+}
+.card .category{
+    
+    font-family: "monserrat-bold" ;
+    font-size: 21px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.card:hover .category{
+    color: rgb(189, 0, 196);
+    animation: showcat 400ms linear;
+    }
+
+    @keyframes showcat {
+        from{
+            transform: translateY(-300%);
+            color: black;
+        }
+        to{
+            transform: translateY(0%);
+            color: white;
+        }
+        }
+
+.card .description{
+    font-family: "monserrat-regular"  ;
+    text-align: center;
+    font-size: 11px;
+    transition: all 300ms;
+    padding: 5px;
+}
+
+.card:hover .description{
+    color: white;
+    animation: showDES 400ms linear;
+
+}
+@keyframes showDES{
+
+    from{
+        transform: translateX(-300%);
+    color: black;
+    }
+    to{
+        transform: translateX(0%);
+        color: white;
+
+    }
+
+}
+/*mapa*/
+
+.map-title{
+    font-family: "monserrat-bold" ;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+#mapa{
+    display: flex;
+    font-family: "monserrat-bold" ;
+    width: 95.6%;
+    height: 465px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    margin: 0px auto;
+    margin-top: 20px;
+   
+}
+#mapa iframe{
+    width: 100%;
+    height: 465px;
+}
+/*Footer*/
+#footer{
+    font-family: "monserrat-bold" ;
+    width: 100%;
+    margin-top: 15px;
+height: 150px;
+background: black;
+color: white;
+
+    
+   
+
+}
+
+
+
+
+.developver{
+    font-size: 30px;
+    font-family: "monserrat-regular" ;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 30px;
+
+}
+
+
+.developver a{
+color: white;
+text-decoration: none;
+
+}
+
+
+.developver a:hover{
+    color:greenyellow;
+
+    
+    }
+
+
+    #ham{
+        font-family:"breezi" ;
+        font-size: 60px;
+        margin-top: 20px;
+        display:none;
+    } 
+    
+    
+    #menu_ham{
+        color: black;
+        display:none;
+    } 
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 10%;
+        z-index: 2;
+    }
+
+    #cierra{
+        color: white;
+        font-size:34px;
+        text-align: center;
+        font-family: "breezi";
+        cursor: pointer;
+    }
+    #cierra:hover{
+        color: rgb(253, 207, 0);
+    }
+/*Responsive*/
+
+
+@media(max-width:344px){
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 177px !important;
+        position: relative;
+        margin-left: -28px !important;
+       
+    }
+    
+}
+
+@media(max-width:360px){
+
+
+ 
+
+    #Banner{
+        display: flex;
+        flex-grow: 1;
+        width: 80%;
+        height: 97px;
+      
+    }
+
+    #Banner h1{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        text-align: center;
+        width: 850px;
+        font-family: "monserrat-bold" ;
+        color: white;
+        font-size: 17px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 1px black;
+        margin: 30px auto;
+        animation: Textvolaris 2s linear;
+        
+    
+    }
+    #mapa{
+       
+        width: 85%;
+        height: 465px;
+      
+    }
+
+    .welcome p{
+        text-align: center;
+        margin-top: 10px ;
+    }
+
+    .map-title{
+        font-family: "monserrat-bold" ;
+        text-align: center;
+        margin-top: 6px;
+        font-size: 25px;
+        
+    }
+
+
+
+    .volaris{
+        width:100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: -13px;
+    }
+    .developver{
+        font-size: 13px;
+        font-family: "monserrat-regular" ;
+        text-align: center;
+       
+    
+    }
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 177px !important;
+        position: relative;
+        margin-left: -7px;
+       
+    }
+    
+ 
+
+
+
+
+   
+}
+
+@media(max-width:375px){
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 177px !important;
+        position: relative;
+        left: -47px !important;
+       
+    }
+}
+
+
+@media(max-width:390px){
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 177px !important;
+        position: relative;
+        left: -27px;
+       
+    }
+}
+
+
+
+@media(max-width:414px){
+
+        #Banner{
+    display: flex;
+    flex-grow: 1;
+    width: 80%;
+    height: 120px;
+    margin: 20px auto;
+    overflow: hidden;
+    
+}
+
+
+#Banner h1{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    font-family: "monserrat-bold" ;
+    color: white;
+    font-size:13px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 30px auto;
+  
+
+}
+
+#mapa{
+       
+    width: 85%;
+    height: 465px;
+  
+}
+
+
+#footer{
+font-family: "monserrat-bold" ;
+width: 100%;
+height:100px;
+background: black;
+color: white;
+    
+   
+
+}
+
+.developver{
+    font-family: "monserrat-regular" ;
+    text-align: center;
+  
+
+}
+
+    
+.volaris{
+    width:90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+
+#menu_ham{
+    color: black;
+    display:block;
+    height: 2px;
+    z-index: 10;
+   left: -146px !important;
+    position: relative;
+    top: -89px !important;
+   
+} 
+
+
+}
+
+
+
+
+/*@media(max-width:414px){
+
+    #Banner{
+        display: flex;
+        flex-grow: 1;
+        width: 80%;
+        height: 180px;
+        margin: 20px auto;
+        overflow: hidden;
+        
+    }
+
+    
+#Banner h1{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    font-family: "monserrat-bold" ;
+    color: white;
+    font-size:13px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 30px auto;
+  
+
+    
+}
+
+
+.developver{
+   
+    font-family: "monserrat-regular" ;
+    text-align: center;
+
+
+}
+
+#menu_ham{
+    color: black;
+    display:block;
+    height: 2px;
+    z-index: 10;
+    margin-left: 230px !important;
+    position: relative;
+    top: -60px;
+   
+} 
+
+#menu_ham nav{
+    background-color: black;
+    height:auto;
+    width: 100px !important;
+    position: relative;
+   
+}
+
+    
+    
+
+}*/
+
+@media(max-width:430px){
+
+    
+    #ham{
+        font-family:"breezi" ;
+        font-size: 60px;
+        margin-top: 24px;
+        margin-left: 170px !important;
+        display:block;
+    }
+
+    #menu_ham{
+        color: black;
+        display:block;
+        height: 2px;
+        z-index: 10;
+       left: -129px;
+        position: relative;
+        top: -80px !important;
+       
+    } 
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 177px !important;
+        position: relative;
+       
+    }
+
+
+
+ 
+
+}
+@media(max-width:540px){
+
+
+    
+    #Banner{
+        display: flex;
+        flex-grow: 1;
+        width: 90%;
+        height: 200px;
+        margin: 20px auto;
+        overflow: hidden;
+        
+    }
+
+    #Banner h1{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        text-align: center;
+        width: 850px;
+        font-family: "monserrat-bold" ;
+        color: white;
+        font-size:20px;
+      
+    
+        
+    }
+
+    .developver{
+        font-size: 10px;
+        font-family: "monserrat-regular" ;
+        
+    
+    }
+
+
+    .developver{
+        font-size: 20px !important;
+        font-family: "monserrat-regular" ;
+    
+   
+    }
+
+    .box-menu{
+        display:none;
+    
+    }
+
+    
+    #ham{
+        font-family:"breezi" ;
+        font-size: 60px;
+        margin-top: 24px;
+        margin-left: 270px;
+        display:block;
+        cursor: pointer;
+    }
+
+    #ham:hover{
+       color: rgb(255, 196, 0);
+    }
+
+    #menu_ham{
+        color: black;
+        display:block;
+        height: 2px;
+        z-index: 10;
+        margin-left: 380px;
+        position: relative;
+        top: -60px;
+       
+    } 
+
+    #menu_ham nav{
+        background-color: black;
+        height:auto;
+        width: 158px;
+        position: relative;
+       
+    }
+
+    #menu_ham ul li a{
+        color: white;
+        text-decoration: none;
+        font-family:"monserrat-bold" ;
+    }
+
+    #menu_ham ul li a:hover{
+        color: white;
+        text-decoration: none;
+        font-family:"monserrat-bold" ;
+        color: rgb(255, 208, 0);
+    }
+
+    #menu_ham ul li{
+        font-size: 14px;
+        margin: 0px 20px 0px 20px;
+        letter-spacing: 1px;
+        line-height: 40px;
+    
+    }
+
+
+    
+
+}
+@media(max-width:280px){
+
+
+        .redes{
+
+        margin-top: 90px;
+        font-family:  "social" ;
+        font-size: 5px;
+        color: white;
+        margin-left: 197px;
+       
+    
+    }
+
+
+}

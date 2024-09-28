@@ -1,0 +1,1005 @@
+/*Tipografias*/
+
+@font-face {
+    font-family:"monserrat-regular" ;
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;   
+
+}
+
+
+@font-face {
+    font-family:"monserrat-bold" ;
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-weight:bold ;
+    font-style: bold;   
+
+}
+
+@font-face {
+    font-family:"breezi" ;
+    src: url(fonts/breezi_font-webfont.ttf);
+    font-weight:normal ;
+    font-style: normal;   
+
+}
+
+@font-face {
+    font-family:"social" ;
+    src: url(fonts/Social\ Media\ Circled.otf);
+    font-weight:normal ;
+    font-style: normal;   
+
+}
+
+/*Aspectos Generales */
+
+.icon{
+    font-family: "breezi" ;
+}
+.social{
+    font-family: "social" ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Header inicio*/
+
+#header{
+    display: flex;
+    min-width: 1024;
+    width:100%;
+    height:250px;
+    margin:0px auto;
+    background-image:url(imgs/banner.jpg) ;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#header a{
+    text-decoration:none;
+
+}
+
+#header .logo{
+    width: 10px ;
+    height: 10px;
+    margin:0px auto;
+    padding-top:20px;
+}
+#header h1{
+font-family: "monserrat-bold" ;
+margin-top: 15px;
+margin-left: 9px;
+font-size:20px;
+color:white;
+letter-spacing: 4px;
+text-shadow:0px 2px 1px #333333;
+transition:all 300ms;
+
+
+}
+#header h1 a{
+    color:white;
+}
+
+#header h1 :hover{
+    text-shadow:0px 2px 1px #333333,0px 0px 4px #70b231;
+
+}
+#box-container{
+    display: flex;
+    flex-direction:column-reverse;
+    flex-grow: 1;
+    background:white;
+    position: fixed;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#box-fixed{
+
+    display: flex;
+    flex-direction:column;
+    background:white;
+    position: fixed;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color:black ; 
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background:white;
+    position: fixed;
+    font-family: "monserrat-bold" ;
+}
+
+#box-fixed a{
+    margin-top: 5px;
+}
+#box-fixed:hover{
+    background: #333333;
+}
+
+
+/*portaflio*/
+#container{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 600px;
+}
+#head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid rgba(225,225, 225, 0.8) ; 
+}
+.log{
+ font-family: "monserrat-bold" ;
+ font-size:12px ;
+ flex-grow: 1;
+ flex-basis: 65%;
+ padding: 10px;
+ margin-left: 20px;
+ color: black;
+ text-shadow: 1px 1px 0px #ccc;
+ text-transform: uppercase;
+}
+#menu{
+
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+    padding-right: 5px;
+
+}
+#menu > ul{
+    display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ list-style: none;
+ font-family:  "monserrat-regular";
+}
+
+#menu a{
+    text-transform: uppercase;
+    color: #444;
+    padding: 7px;
+    transition: all 300ms;
+    text-decoration: none;
+}
+#menu a:hover{
+
+    background: rgb(0, 0, 141);
+    color: white;
+
+
+}
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#projects{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    flex-basis:80% ;
+    
+}
+.projects{
+    flex-grow: 1;
+    flex-basis: 240px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    font-family:   "monserrat-regular";
+ 
+}
+.projects img{
+    width: 100% ;
+}
+.project-info{
+    padding: 10px;
+}
+.project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+}
+.project-info a:hover{
+    color: green;
+}
+
+.project-info p{
+    font-size: 16px;
+    color: gray;
+}
+
+#aside{
+    /*order: 2; ordena diferente los elementos */
+    flex-basis: 15%;
+    margin-right: 30px;
+    padding: 15px;
+
+    font-family: "monserrat-regular" ;
+
+    display: flex;
+    flex-direction: column;
+    flex-direction: wrap;
+
+}
+#aside h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225, 225, 0.8) ; ;
+    text-align: center;
+}
+#aside ul{
+    list-style: none;
+}
+#aside ul li{
+    padding-bottom: 20px;
+}
+#aside a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background: #eee ;
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 300ms;
+
+}
+#aside a:hover{
+    background: rgb(0, 0, 141);
+    color: #eee;
+
+}
+
+
+#footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-family: "monserrat-bold" ;
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(225,225, 225, 0.8) ; ;
+
+}
+
+#footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: right;
+    font-family: "monserrat-bold" ;
+    margin-right: 20px;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
+}
+/*Footer*/
+#foot{
+    font-family: "monserrat-bold" ;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+height: 270px;
+background: black;
+color: white;
+overflow: hidden;
+    
+   
+
+}
+
+#foot h5{
+    display: block;
+    font-family:  "monserrat-bold" ;
+    font-size:30px;
+    color: white;
+    margin-left: 18px;
+    
+}
+
+#foot a{
+    text-decoration: none;
+    color:  #00538c ;  
+    transition: all 300ms ;
+}
+
+#foot ul{
+    font-size: 17px;
+    font-family: "monserrat-regular" ;
+    margin-left: 5px;
+}
+
+#foot ul li{
+    padding: 12px;
+}
+
+#foot ul li a{
+    display: block;
+    transition: all 300ms;
+}
+#foot ul li:hover a{
+
+    color: rgb(3, 190, 3);
+    
+}
+
+
+
+
+.redes-h3{
+    font-family:  "monserrat-bold" ;
+    text-align: center;
+    align-items: center;
+}
+
+.redes{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    letter-spacing: 2px ;
+    align-items: center;
+    font-family:  "social" ;
+    font-size: 14px;
+    color: white;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-top: -9px;
+    
+
+}
+.redes a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.redes .overlay{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    height: 17px ;
+    font-family: "monserrat-bold" ;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #11005a;
+    position: absolute;
+     right: 180px;
+    margin-top: -49px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+
+}
+.redes  div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%) ;
+}
+.developver{
+    font-size: 17px;
+    font-family: "monserrat-regular" ;
+    text-align: center;
+    margin-top: 238px;
+    margin-right: 3px;
+
+}
+/*responsive*/
+
+@media(max-width:360px){
+
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    
+ .projects{
+  
+    margin-right: 20px;
+    margin-left: 20px;
+ 
+}
+#aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   #aside ul li{
+       flex-grow: 1;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+   
+   .developver{
+    font-size: 10px;
+    font-family: "monserrat-regular" ;
+    margin-top: 20px;
+  
+  
+ 
+
+}
+
+
+
+
+.redes{  
+    
+    margin-top: 95px;
+    letter-spacing: 2px ;
+    font-family:  "social" ;
+    font-size: 5px;
+    color: white;
+    margin-right: 244px;
+
+}
+#foot ul li{
+    padding: 12px;
+    margin-bottom: 9px;
+}
+
+#foot h5{
+    display: block;
+    font-family:  "monserrat-bold" ;
+    font-size:15px;
+    color: white;
+    margin-left: 18px;
+    margin-top: 90px;
+    
+}
+
+
+.redes .overlay{
+
+    height: 17px ;
+    font-family: "monserrat-bold" ;
+    right: 100px;
+    margin-top: -60px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+#footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: "monserrat-bold" ;
+    font-size: 10px ;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+text-align: center;
+    color: #444;
+    font-size: 10px;
+}
+
+.log{
+    font-family: "monserrat-bold" ;
+    font-size:12px ;
+text-align: center;
+   }
+
+
+
+   
+    
+}
+
+@media(max-width:411px){
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    
+ .projects{
+  
+    margin-right: 20px;
+    margin-left: 20px;
+ 
+}
+#aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   #aside ul li{
+       flex-grow: 1;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+
+   .developver{
+    font-size: 10px;
+    font-family: "monserrat-regular" ;
+    margin-top: 20px;
+  
+  
+ 
+
+}
+
+
+
+
+.redes{  
+    
+    margin-top: 95px;
+    letter-spacing: 2px ;
+    font-family:  "social" ;
+    font-size: 5px;
+    color: white;
+    margin-right: 244px;
+
+}
+#foot ul li{
+    padding: 12px;
+    margin-bottom: 9px;
+}
+
+#foot h5{
+    display: block;
+    font-family:  "monserrat-bold" ;
+    font-size:15px;
+    color: white;
+    margin-left: 18px;
+    margin-top: 90px;
+    
+}
+
+
+.redes .overlay{
+
+    height: 15px ;
+    font-family: "monserrat-bold" ;
+    right: 100px;
+    margin-top: -60px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+
+#footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: "monserrat-bold" ;
+    font-size: 10px ;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+text-align: center;
+    color: #444;
+    font-size: 10px;
+}
+
+.log{
+    font-family: "monserrat-bold" ;
+    font-size:12px ;
+text-align: center;
+   }
+
+
+
+   
+    
+
+
+}
+
+@media(max-width:320px){
+
+    .developver{
+        font-size: 10px;
+        font-family: "monserrat-regular" ;
+        margin-top: 20px;
+        margin-left:-30px;
+
+    
+    }
+    
+    
+    
+    
+    .redes{  
+        font-size: 5px;
+    
+        margin-right:10px;
+    
+    }
+    #foot ul li{
+        padding: 12px;
+        margin-bottom: 9px;
+    }
+    
+    #foot h5{
+        display: block;
+        font-family:  "monserrat-bold" ;
+        font-size:15px;
+        color: white;
+        margin-left: 18px;
+        margin-top: 90px;
+        
+    }
+    
+    
+    .redes .overlay{
+    
+        height: 15px ;
+        font-family: "monserrat-bold" ;
+        right: 100px;
+        margin-top: -60px;
+        cursor: pointer;
+        font-size: 14px;
+    
+    }
+
+
+}
+
+@media(max-width:414px){
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    
+ .projects{
+  
+    margin-right: 20px;
+    margin-left: 20px;
+ 
+}
+#aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   #aside ul li{
+       flex-grow: 1;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+
+   #footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: "monserrat-bold" ;
+    font-size: 10px ;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+text-align: center;
+    color: #444;
+    font-size: 10px;
+}
+
+.log{
+    font-family: "monserrat-bold" ;
+    font-size:12px ;
+text-align: center;
+   }
+
+
+   .developver{
+    font-size: 10px;
+    font-family: "monserrat-regular" ;
+    margin-top: 20px;
+    margin-left:-30px;
+
+
+}
+
+
+
+
+.redes{  
+    font-size: 5px;
+
+    margin-right:10px;
+
+}
+#foot ul li{
+    padding: 12px;
+    margin-bottom: 9px;
+}
+
+#foot h5{
+    display: block;
+    font-family:  "monserrat-bold" ;
+    font-size:15px;
+    color: white;
+    margin-left: 18px;
+    margin-top: 90px;
+    
+}
+
+
+.redes .overlay{
+
+    height: 15px ;
+    font-family: "monserrat-bold" ;
+    right: 100px;
+    margin-top: -60px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+
+    
+
+}
+
+@media(max-width:768px){
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    
+ .projects{
+  
+    margin-right: 20px;
+    margin-left: 20px;
+ 
+}
+#aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   #aside ul li{
+       flex-grow: 1;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+
+   #footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: "monserrat-bold" ;
+    font-size: 10px ;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+text-align: center;
+    color: #444;
+    font-size: 10px;
+}
+
+.log{
+    font-family: "monserrat-bold" ;
+    font-size:12px ;
+text-align: center;
+   }
+
+
+}
+
+@media(max-width:280px){
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside{
+        margin-right: 0px;
+    }
+
+    
+ .projects{
+  
+    margin-right: 20px;
+    margin-left: 20px;
+ 
+}
+#aside ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+   #aside ul li{
+       flex-grow: 1;
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+
+
+   #footer  .logo{
+    opacity: 0,7;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: "monserrat-bold" ;
+    font-size: 10px ;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+text-align: center;
+    color: #444;
+    font-size: 10px;
+}
+
+.log{
+    font-family: "monserrat-bold" ;
+    font-size:12px ;
+text-align: center;
+   }
+
+
+   .developver{
+    font-size: 10px;
+    font-family: "monserrat-regular" ;
+    margin-top: 20px;
+    margin-left:-30px;
+
+
+}
+
+
+
+
+.redes{  
+    font-size: 5px;
+
+    margin-right:10px;
+
+}
+#foot ul li{
+    padding: 12px;
+    margin-bottom: 9px;
+    font-size: 12px;
+}
+
+#foot h5{
+    display: block;
+    font-family:  "monserrat-bold" ;
+    font-size:15px;
+    color: white;
+    margin-left: 18px;
+    margin-top: 90px;
+    
+}
+
+
+.redes .overlay{
+
+    height: 15px ;
+    font-family: "monserrat-bold" ;
+    right: 50px;
+    margin-top: -60px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+#menu{
+
+ font-size: 12px;
+
+}
+
+
+    
+
+}
+
+
+
+
+
+
+
+
